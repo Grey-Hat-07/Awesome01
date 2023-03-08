@@ -1,39 +1,27 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-
-import {SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, useColorScheme} from 'react-native';
-
+import {SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, useColorScheme, Alert} from 'react-native';
+import Flatcards from './Components/Flatcards';
+import FanzyCard from './Components/FanzyCard';
 function App() {
 
   const isDarkMode = useColorScheme() === 'dark';
   return(
-    <View style={styles.container}>
-      <Text style={isDarkMode?styles.whiteText:styles.whiteText}>Teste</Text>
-    </View>
+    <SafeAreaView style = {styles.container}>
+      <ScrollView>
+        {/* <Text>app</Text> */}
+        <Flatcards/>
+        <FanzyCard />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    //backgroundColor: '#fff',
-    alignItems: 'center',
-    fontSize: 50,
-    justifyContent: 'center',
-    //backgroundColor: 'blue',
+    backgroundColor: 'grey',
   },
-  whiteText: {
-    color: '#fff',
-  },
-  blackText: {
-    color: '#000',
-  }
+ 
+  
 });
 
 export default App;
