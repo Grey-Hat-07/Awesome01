@@ -23,7 +23,7 @@ export default function FanzyCard() {
             The festival celebrates the feelings of love and pure joy with a chaotic countrywide colored powder fight.
             </Text>
             <Text style={styles.CardFooter}>
-               footer
+               12 mins ago
             </Text>
         </View>
       </View>
@@ -37,38 +37,54 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         fontWeight: 'bold',
     },
-    card:{
-        width:'95%',
-        marginHorizontal: 10,
-        borderRadius: 10,
-        marginVertical: 2,
-        alignItems: 'center',
+    card: {
+        width: 320,
+        height: 360,
+        borderRadius: 6,
+        marginVertical: 12,
+        marginHorizontal: 16
+        
     },
-    cardElevated:{
+    cardElevated: {
+        backgroundColor: '#FFFFFF',
         elevation: 3,
+        shadowOffset: {
+            width: 1,
+            height: 1
+        }
+        
     },
-    CardImage:{
-
-        width: '96%',
-        height: 100,
-        borderRadius: 10,
+    CardImage: {
+        height: 180,
+        marginBottom: 8,
+        borderTopLeftRadius: 6,
+        borderTopRightRadius: 6
+        
     },
-    CardBody:{
-        paddingHorizontal: 10,
-        flexGrow: 1,
+    CardBody: {
         flex: 1,
+        flexGrow: 1,
+        paddingHorizontal: 12
     },
-    CardTitle:{
-        fontSize: 20,
+    CardTitle: {
+        color: '#000000',
+        fontSize: 22,
         fontWeight: 'bold',
+        marginBottom: 4
     },
-    CardLabel:{
-
+    CardLabel: {
+        color: '#000000',
+        fontSize: 14,
+        marginBottom: 6
     },
-    CardDesc:{
-        flexShrink: 1,
+    CardDesc: {
+        color: '#242B2E',
+        fontSize: 12,
+        marginBottom: 12,
+        marginTop: 6,
+        flexShrink: 1
     },
-    CardFooter:{
-
+    CardFooter: {
+        color: '#000000'
     }
 })
