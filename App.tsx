@@ -4,6 +4,7 @@ import Flatcards from './Components/Flatcards';
 import FanzyCard from './Components/FanzyCard';
 import ActionCard from './Components/ActionCard';
 import ContactList from './Components/ContactList';
+import Chatcard from './Components/Chatcard';
 function App() {
 
   const isDarkMode = useColorScheme() === 'dark';
@@ -15,6 +16,7 @@ function App() {
         <FanzyCard />
        <ActionCard />
        <ContactList />
+       <Chatcard/>
       </ScrollView>
     </SafeAreaView>
   );
